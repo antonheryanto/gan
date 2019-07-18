@@ -102,4 +102,5 @@ for epoch in range(num_epochs):
         g_error = train_generator(g_optimizer, fake_data)
         # Log error
 
-img = generator(noise(1).to(device)).detach().cpu().numpy()
+#img = generator(noise(1).to(device)).detach().cpu().view(28,28).numpy()
+#plt.imshow(img)
